@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="bg-charcoal flex h-screen items-center justify-center">
+      <!-- Container -->
+
+      <div
+        class="flex h-screen w-full flex-col justify-center gap-8 rounded-lg bg-white px-6 sm:h-fit sm:max-w-md sm:px-12"
+      >
+        <div class="mt-auto w-16 sm:mt-10">
+          <img
+            src="assets/images/icon-success.svg"
+            alt="success icon"
+            class="block w-full"
+          />
+        </div>
+        <h1 class="text-drkSlate text-5xl font-bold">
+          Thanks for subscribing!
+        </h1>
+        <p class="text-drkSlate">
+          A confirmation email has been sent to
+          <span class="font-bold">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button
+          id="dismiss"
+          class="bg-drkSlate to-tomato from-grStart mb-10 mt-auto inline-block rounded-md py-4 text-sm font-bold text-white hover:bg-gradient-to-r"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* gap: 4rem */
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div
+      class="bg-charcoal h-screen w-full md:flex md:items-center md:justify-center"
+    >
+      <!-- Container -->
+      <div
+        class="flex flex-col bg-white md:max-h-[800px] md:w-fit md:flex-row-reverse md:items-center md:rounded-3xl"
+      >
+        <!-- Image -->
+        <div class="md:max-w-lg md:p-8">
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            class="block w-full object-cover md:hidden"
+          />
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            class="hidden w-full object-cover md:block"
+          />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-col gap-8 px-8 py-12 md:pl-16">
+          <h1 class="text-drkSlate text-4xl font-bold md:text-6xl">
+            Stay updated!
+          </h1>
+          <p class="text-drkSlate md:text-md">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="space-y-4">
+            <li class="list gap-4">
+              <span class="col-span-1"
+                ><img src="assets/images/icon-list.svg" alt="icon" /></span
+              ><span class="text-drkSlate col-span-1"
+                >Product discovery and building what matters
+              </span>
+            </li>
+            <li class="list gap-4">
+              <span class="col-span-1"
+                ><img src="assets/images/icon-list.svg" alt="icon" /></span
+              ><span class="text-drkSlate col-span-1"
+                >Measuring to ensure updates are a success
+              </span>
+            </li>
+            <li class="list gap-4">
+              <span class="col-span-1"
+                ><img src="assets/images/icon-list.svg" alt="icon" /></span
+              ><span class="text-drkSlate col-span-1">And much more! </span>
+            </li>
+          </ul>
+          <!-- Form -->
+          <form class="flex flex-col gap-4" id="signup">
+            <div class="flex items-center justify-between">
+              <label for="email" class="text-drkSlate text-sm font-semibold"
+                >Email address</label
+              >
+              <span
+                class="text-tomato hidden text-sm font-semibold"
+                id="errorMessage"
+                >Valid email required!</span
+              >
+            </div>
+            <input
+              type="email"
+              id="email"
+              placeholder="email@company.com"
+              class="border-grey focus-visible:outline-drkSlate rounded-md border px-6 py-3.5"
+            />
+            <button
+              id="cta"
+              class="bg-drkSlate to-tomato from-grStart rounded-md py-4 text-sm font-bold text-white hover:bg-gradient-to-r"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
